@@ -32,11 +32,11 @@
         Name:
         <input type="text" class="border-primary-300 focus:border-secondary-400 rounded-lg" bind:value={newName} />
       </label>
-      <button class="btn w-16 rounded-lg" type="submit">Submit</button>
+      <button class="btn-green w-16 rounded-lg" type="submit">Submit</button>
     </form>
   {:else}
     <p>Hello, {currentName}!</p>
-    <button on:click={removeName}>Sign Out</button>
+    <button class="btn-blue w-16 rounded-lg" on:click={removeName}>Sign Out</button>
   {/if}
 </div>
 

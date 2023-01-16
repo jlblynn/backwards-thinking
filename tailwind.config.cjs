@@ -29,8 +29,11 @@ module.exports = {
   plugins: [
     plugin(function ({ addComponents, theme }) {
       addComponents({
-        '.btn': {
+        '.btn-green': {
           backgroundColor: theme('colors.primary'),
+        },
+        '.btn-blue': {
+          backgroundColor: theme('colors.tertiary'),
         }
       })
     })
