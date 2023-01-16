@@ -35,8 +35,7 @@
       <button class="btn-green w-16 rounded-lg" type="submit">Submit</button>
     </form>
   {:else}
-    <p>Hello, {currentName}!</p>
-    <button class="btn-blue w-16 rounded-lg" on:click={removeName}>Sign Out</button>
+    <button class="btn-blue w-32 rounded-lg" on:click={removeName}>Sign Out {currentName}</button>
   {/if}
 </div>
 

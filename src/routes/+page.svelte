@@ -1,5 +1,6 @@
 <script lang="ts">
   import Name from "../components/Name.svelte";
+  import Planner from "../components/Planner.svelte";
   import { name } from "../store/store";
  
   let nameValue: string | undefined;
@@ -18,9 +19,10 @@
 <main class="relative">
   <Name />
   {#if !nameValue}
-    <p>No name...</p>
+    <p>Please enter your name...</p>
   {:else}
-    <p>Please enter a goal, {nameValue}...</p>
+    <h2>Time to plan your goals, <strong>{nameValue}</strong>.</h2>
+    <Planner />
   {/if}
 </main>
 
