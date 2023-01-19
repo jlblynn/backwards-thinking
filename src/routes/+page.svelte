@@ -20,6 +20,7 @@
   <Name />
   {#if !nameValue}
     <p>Please enter your name...</p>
+    <a href="/register">Register</a>
   {:else}
     <h2>Time to plan your goals, <strong>{nameValue}</strong>.</h2>
     <Planner />
